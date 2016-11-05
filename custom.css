@@ -45,3 +45,26 @@ a.mdl-navigation__link {
 a.mdl-navigation__link:last-child {
     border: 0;
 }
+
+
+/* Card Edits */
+span.food-price {
+    font-weight: bold;
+    float: left;
+}
+
+span.food-loc {
+    float: right;
+}
+
+.mdl-card__title {
+    padding-bottom: 0;
+}
+
+.mdl-card__actions .rating {
+    float: left;
+}
+
+.mdl-card__actions .view-link {
+    float: right;
+}
