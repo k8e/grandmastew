@@ -35,7 +35,6 @@ nav.mdl-navigation {
 a.mdl-navigation__link {
     border-bottom: 1px solid #CCCCCC;
     /* padding: 15px !important; */
-    px; */
     margin: 3px;
 }
 
@@ -51,6 +50,9 @@ a.mdl-navigation__link:last-child {
     border: 0;
 }
 
+.mdl-layout__drawer {
+  background-color: #ecf0f1;
+}
 
 /* Card Edits */
 span.food-price {
