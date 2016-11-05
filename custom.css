@@ -45,3 +45,7 @@ a.mdl-navigation__link {
 a.mdl-navigation__link:last-child {
     border: 0;
 }
+
+.mdl-layout__drawer {
+  background-color: #ecf0f1;
+}
