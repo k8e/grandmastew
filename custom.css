@@ -1,4 +1,9 @@
 
+.mdl-layout {
+    background-color: #fafafa;
+}
+
+
 /* Navbar edits */
 @media (min-width: 900px) {
     .mdl-layout__drawer-button {
@@ -48,4 +53,62 @@ a.mdl-navigation__link:last-child {
 
 .mdl-layout__drawer {
   background-color: #ecf0f1;
+  
+
+/* Card Edits */
+span.food-price {
+    font-weight: bold;
+    float: left;
+}
+
+span.food-loc {
+    float: right;
+}
+
+.mdl-card__title {
+    padding-bottom: 0;
+}
+
+.mdl-card__actions .rating {
+    float: left;
+}
+
+.mdl-card__actions .view-link {
+    float: right;
+}
+
+/* View Food */
+.featured-food .mdl-cell--6-col {
+    margin: auto;
+}
+
+.view-options a:first-child {
+    float: left;
+}
+
+.view-options a:last-child {
+    float: right;
+}
+
+.food-descript {
+    padding: 10px;
+    color: #555555;
+}
+
+.cook-pic {
+    display: block;
+    width: 75px;
+    height: 75px;
+    float: left;
+}
+
+.cook-info {
+    display: block;
+    min-height: 80px;
+}
+
+.cool-quote {
+    display: block;
+    float: right;
+    padding: 10px;
 }
