@@ -115,3 +115,7 @@ span.food-loc {
 span.rating {
     padding: 0 !important;
 }
+
+.loc_url {
+  color: #fb5904;
+}
