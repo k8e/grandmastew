@@ -1,0 +1,318 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Grandma's Stew">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Grandma's Stew</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="images/grandma-logo-white.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Buy Food</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Pending Orders</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Sell Food</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/grandma-logo-white.png">
+          </span>
+          <button class="fa fa-github fa-lg android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button" href="https://www.google.com">
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <a href="https://github.com/k8e/GrandmaStew" class="mdl-menu__item">About This Hack</a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="images/grandma-logo-white.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="buyfood.html">Buy Food</a>
+          <a class="mdl-navigation__link" href="pending.html">Pending</a>
+          <a class="mdl-navigation__link" href="sellfood">Sell Food</a>
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+          <div class="android-card-container mdl-grid">
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/food7.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Luke's Broccoli Mac</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$3</span>
+                      <span class="food-loc">0.1 mi, <a class="loc_url" href="https://www.google.com/maps/place/1819+Hone+Ave,+Bronx,+NY+10461/@40.849269,-73.85755,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f4a5c0f17781:0x8d68aeb1cd0eef78!8m2!3d40.849265!4d-73.855356" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">1819 Hone Ave, Bronx NY</a></span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star-half-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   View
+                   <i class="fa fa-chevron-right"></i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/food2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Jared's Subs</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$2</span>
+                      <span class="food-loc">0.6 mi, <a class="loc_url" href="https://www.google.com/maps/place/2229+Valentine+Ave,+Bronx,+NY+10457/@40.855802,-73.901126,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f47a3c6c47e3:0x1f0afcc2cf5d6abd!8m2!3d40.855798!4d-73.898932" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">2229 Valentine Ave, Bronx NY</a></span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star-half-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   View
+                   <i class="fa fa-chevron-right"></i>
+                 </a>
+              </div>
+            </div>
+
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/food3.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Special Stew</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$3</span>
+                      <span class="food-loc">0.5 mi, <a class="loc_url" href="https://www.google.com/maps/place/2229+Valentine+Ave,+Bronx,+NY+10457/@40.855802,-73.901126,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f47a3c6c47e3:0x1f0afcc2cf5d6abd!8m2!3d40.855798!4d-73.898932" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">1082 Morris Park Ave, Bronx NY</a></span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   View
+                   <i class="fa fa-chevron-right"></i>
+                 </a>
+              </div>
+            </div>
+
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/food4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Katie's Cassarole</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$3</span>
+                      <span class="food-loc">0.6 mi, <a class="loc_url" href="https://www.google.com/maps/place/3030+Bronxwood+Ave,+Bronx,+NY+10469/@40.870437,-73.863243,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f343dd7b3949:0xfd5672aba759db3e!8m2!3d40.870433!4d-73.861049" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">3030 Bronxwood Ave, Bronx NY</a></span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star-half-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   View
+                   <i class="fa fa-chevron-right"></i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/food5.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Big Mike's Spicy Stew</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$1</span>
+                      <span class="food-loc">3.2 mi, <a class="loc_url" href="https://www.google.com/maps/place/2938+Bouck+Ave,+Bronx,+NY+10469/@40.86867,-73.851844,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f34ec5f94913:0xc05031733a98f663!8m2!3d40.868666!4d-73.84965" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">2938 Bouck Ave, Bronx NY</span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star-half-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   View
+                   <i class="fa fa-chevron-right"></i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/food1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Vegan Soup</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$1</span>
+                      <span class="food-loc">0.2 mi, <a class="loc_url" href="https://www.google.com/maps/place/2539+Morgan+Ave,+Bronx,+NY+10469/@40.863929,-73.84781,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f34d887b804d:0x471fce40f8346faa!8m2!3d40.863925!4d-73.845616" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">2539 Morgan Ave, Bronx NY</span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   View
+                   <i class="fa fa-chevron-right"></i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/food6.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Backstreet Barbecue</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$3</span>
+                      <span class="food-loc">2.6 mi, <a class="loc_url" href="https://www.google.com/maps/place/2440+Fish+Ave,+Bronx,+NY+10469/@40.86212,-73.849165,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f352300c86dd:0xfb9e802f1d85f58a!8m2!3d40.862116!4d-73.846971" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">2440 Fish Ave, Bronx NY</span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star fa-lg"></i>
+                   <i class="fa fa-star-half-o fa-lg"></i>
+                   <i class="fa fa-star-o fa-lg"></i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   View
+                   <i class="fa fa-chevron-right"></i>
+                 </a>
+              </div>
+            </div>
+          </div>
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+            </ul>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </body>
+</html>
