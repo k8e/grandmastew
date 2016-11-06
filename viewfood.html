@@ -43,7 +43,7 @@
     </style>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div id="main" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
@@ -94,7 +94,7 @@
         </nav>
       </div>
 
-      <div class="android-content mdl-layout__content">
+      <div id="main" class="sceneElement android-content mdl-layout__content" data-viewport="1">
         <a name="top"></a>
           <div class="featured-food android-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
@@ -130,7 +130,7 @@
                   </div>
               </div>
               <div class="view-options mdl-card__actions">
-                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="index.html" data-upgraded=",MaterialButton">
+                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="index.html" data-upgraded=",MaterialButton" data-target="-1">
                    Back
                  </a>
                  <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="" data-upgraded=",MaterialButton">

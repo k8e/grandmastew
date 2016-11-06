@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.smoothState.min.js"></script>
+    <script src="js/main.js"></script>
     <style>
     #view-source {
       position: fixed;
@@ -91,7 +95,7 @@
         </nav>
       </div>
 
-      <div class="android-content mdl-layout__content">
+      <div id="main" class="sceneElement android-content mdl-layout__content" data-viewport="0">
         <a name="top"></a>
           <div class="android-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
@@ -115,7 +119,7 @@
                    <i class="material-icons">star</i>
                    <i class="material-icons">star_border</i>
                </span>
-                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="viewfood.html" data-target="1">
                    View
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -143,36 +147,7 @@
                    <i class="material-icons">star</i>
                    <i class="material-icons">star_border</i>
                </span>
-                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   View
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Special Stew</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                  <div class="food-card-info">
-                      <span class="food-price">$3</span>
-                      <span class="food-loc">0.1 mi, 2229 Valentine Ave, Bronx NY</span>
-                  </div>
-              </div>
-              <div class="mdl-card__actions">
-                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   <i class="material-icons">star</i>
-                   <i class="material-icons">star</i>
-                   <i class="material-icons">star</i>
-                   <i class="material-icons">star</i>
-                   <i class="material-icons">star_border</i>
-               </span>
-                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="viewfood.html" data-target="1">
                    View
                    <i class="material-icons">chevron_right</i>
                  </a>
@@ -201,7 +176,36 @@
                    <i class="material-icons">star</i>
                    <i class="material-icons">star_border</i>
                </span>
-                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="viewfood.html" data-target="0">
+                   View
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Special Stew</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                  <div class="food-card-info">
+                      <span class="food-price">$3</span>
+                      <span class="food-loc">0.1 mi, 2229 Valentine Ave, Bronx NY</span>
+                  </div>
+              </div>
+              <div class="mdl-card__actions">
+                 <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   <i class="material-icons">star</i>
+                   <i class="material-icons">star</i>
+                   <i class="material-icons">star</i>
+                   <i class="material-icons">star</i>
+                   <i class="material-icons">star_border</i>
+               </span>
+                 <a class="view-link android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="viewfood.html" data-target="-1">
                    View
                    <i class="material-icons">chevron_right</i>
                  </a>
