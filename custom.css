@@ -119,3 +119,24 @@ span.rating {
 .loc_url {
   color: #fb5904;
 }
+
+/* Price Page */
+.food-price-info {
+    display: block;
+    width: 90%;
+    padding: 40px 0;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: orange;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 246%;
+}
+
+.food-pickup-time {
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: center;
+}
