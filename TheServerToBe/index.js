@@ -29,6 +29,10 @@ app.get('/', function(req, res) {
   //res.send("Hello world");
   res.render('index.ejs');
 });
+app.get('/viewfood', function(req, res) {
+  //res.send("Hello world");
+  res.render('viewfood.ejs');
+});
 
 //////////Start the server
 var server = app.listen(process.env.PORT || '8080', '0.0.0.0', function() {
