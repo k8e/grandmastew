@@ -111,3 +111,7 @@ span.food-loc {
     float: right;
     padding: 10px;
 }
+
+span.rating {
+    padding: 0 !important;
+}
