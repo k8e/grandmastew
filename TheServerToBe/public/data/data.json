@@ -1,0 +1,114 @@
+{
+  "food": {
+    "0": {
+      "name": "Luke's Brocolli Mac",
+      "seller": "seller00",
+      "price": 3,
+      "location": "1819 Hone Ave, Bronx, NY 10461",
+      "map-url": "https://www.google.com/maps/place/1819+Hone+Ave,+Bronx,+NY+10461/@40.849265,-73.8575447,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f4a5c0f17781:0x8d68aeb1cd0eef78!8m2!3d40.849265!4d-73.855356",
+      "distance": 0.1,
+      "description": "This delicious mac n cheese was just made for a block party and we have plenty left over!",
+      "rating": 4.0,
+      "image": "food7.png",
+      "servings": "12",
+      "id": 0
+    },
+    "1": {
+      "name": "Jared's Subs",
+      "seller": "seller01",
+      "price": 2,
+      "location": "2229 Valentine Ave, Bronx, NY 10457",
+      "map-url": "https://www.google.com/maps/place/2229+Valentine+Ave,+Bronx,+NY+10457/@40.855798,-73.9011207,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f47a3c6c47e3:0x1f0afcc2cf5d6abd!8m2!3d40.855798!4d-73.898932",
+      "distance": 2,
+      "description": "These subway sandwiches were accidentally double-ordered for an all-day court trial.",
+      "rating": 3.0,
+      "image": "food2.png",
+      "servings": "22",
+      "id": 1
+    },
+    "2": {
+      "name": "Special Stew",
+      "seller": "seller02",
+      "price": 3,
+      "location": "2229 Valentine Ave, Bronx, NY 10457",
+      "map-url": "https://www.google.com/maps/place/2229+Valentine+Ave,+Bronx,+NY+10457/@40.855798,-73.9011207,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f47a3c6c47e3:0x1f0afcc2cf5d6abd!8m2!3d40.855798!4d-73.898932",
+      "distance": 0.5,
+      "description": "Surprise! This is my weekly stew I make to support the community and make some extra cash on the side.",
+      "rating": 4.0,
+      "image": "food3.png",
+      "servings": "8",
+      "id": 2
+    },
+    "3": {
+      "name": "Katie's Cassarole",
+      "seller": "seller03",
+      "price": 3,
+      "location": "3030 Bronxwood Ave, Bronx, NY 10469",
+      "map-url": "https://www.google.com/maps/place/3030+Bronxwood+Ave,+Bronx,+NY+10469/@40.870433,-73.8632377,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f343dd7b3949:0xfd5672aba759db3e!8m2!3d40.870433!4d-73.861049",
+      "distance": 0.6,
+      "description": "This cassarole contains eggs, sausage, cheese, and white rice. I made too much for the week!",
+      "rating": 4.0,
+      "image": "food4.png",
+      "servings": "4",
+      "id": 3
+    },
+    "4": {
+      "name": "Big Mike's Spicy Stew",
+      "seller": "seller00",
+      "price": 1,
+      "location": "2938 Bouck Ave, Bronx, NY 10469",
+      "map-url": "https://www.google.com/maps/place/2938+Bouck+Ave,+Bronx,+NY+10469/@40.868666,-73.8518387,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f34ec5f94913:0xc05031733a98f663!8m2!3d40.868666!4d-73.84965",
+      "distance": 3.2,
+      "description": "Watch out! I made this stew too hot for my family and they made me post it here. Guess I shouldn't have used those Ghost Peppers...",
+      "rating": 3.0,
+      "image": "food5.png",
+      "servings": "16",
+      "id": 0
+    },
+    "5": {
+      "name": "Vegan Soup",
+      "seller": "seller01",
+      "price": 1,
+      "location": "2539 Morgan Ave, Bronx, NY 10469",
+      "map-url": "https://www.google.com/maps/place/2539+Morgan+Ave,+Bronx,+NY+10469/@40.863929,-73.84781,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f34d887b804d:0x471fce40f8346faa!8m2!3d40.863925!4d-73.845616",
+      "distance": 0,
+      "description": "My father-in-law gives our family his vegan soup once a week. It'd break his heart if he knew how much I hated it! Maybe it can do the community some good.",
+      "rating": 4.0,
+      "image": "food1.png",
+      "servings": "8",
+      "id": 0
+    },
+    "6": {
+      "name": "Backstreet Barbecue",
+      "seller": "seller02",
+      "price": 3,
+      "location": "2440 Fish Ave, Bronx, NY 10469",
+      "map-url": "https://www.google.com/maps/place/2440+Fish+Ave,+Bronx,+NY+10469/@40.862116,-73.8491597,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f352300c86dd:0xfb9e802f1d85f58a!8m2!3d40.862116!4d-73.846971",
+      "distance": 2.6,
+      "description": "YEE-HAW! I made too much for my family get-together and I made too much meat for them to handle!",
+      "rating": 5,
+      "image": "food6.png",
+      "servings": "25",
+      "id": 0
+    }
+  },
+  "sellers": {
+    "seller00": {
+      "name": "Luke Franklin",
+      "quote": "Wow, that food was remarkable! Highly recommended. When can I get some more?",
+      "image": ""
+    },
+    "seller01": {
+      "name": "Jared",
+      "quote": "Fresh and juicy, just the way I like it! Yummy yummy in my tummy."
+    },
+    "seller02": {
+      "name": "Dale",
+      "quote": "The best meal around! Nothing makes me happier than community food."
+    },
+    "seller03": {
+      "name": "Katie Notrenee",
+      "quote": "Wow, that food was remarkable! Highly recommended. When can I get some more?"
+    }
+  }
+}

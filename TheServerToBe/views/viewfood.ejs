@@ -65,7 +65,7 @@
             <!-- Navigation -->
             <div class="android-navigation-container">
               <nav class="android-navigation mdl-navigation">
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Buy Food</a>
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/">Buy Food</a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Pending Orders</a>
                 <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Sell Food</a>
               </nav>
@@ -86,7 +86,7 @@
           <img class="android-logo-image" src="images/grandma-logo-white.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Buy Food</a>
+          <a class="mdl-navigation__link" href="/">Buy Food</a>
           <a class="mdl-navigation__link" href="">Pending</a>
           <a class="mdl-navigation__link" href="">Sell Food</a>
         </nav>
@@ -97,33 +97,36 @@
           <div class="featured-food android-card-container mdl-grid">
             <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
               <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
+                <img src="images/<%=food["image"]%> ">
               </div>
               <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Special Stew</h4>
+                 <h4 class="mdl-card__title-text"><%=food["name"]%> </h4>
               </div>
               <div class="mdl-card__supporting-text">
                   <div class="food-card-info">
-                      <span class="food-price">$3</span>
-                      <span class="food-loc">0.1 mi, 2229 Valentine Ave, Bronx NY</span>
+                      <span class="food-price">$<%=food["price"]%> </span>
+                      <span class="food-loc"><%=food["distance"]%>  mi, <%=food["location"]%> </span>
                   </div>
                   <span class="rating mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                     <i class="material-icons">star</i>
-                     <i class="material-icons">star</i>
-                     <i class="material-icons">star</i>
-                     <i class="material-icons">star</i>
-                     <i class="material-icons">star_border</i>
+                     <% for(var r =0; r < 5; r++) {%>
+                         <% if (r < food["rating"]) { %>
+                             <i class="material-icons">star</i>
+                         <% } else { %>
+                             <i class="material-icons">star_border</i>
+                         <% } %>
+                     <% } %>
+                     <script><% console.log(food["id"]) %></script>
                   </span>
                   <div class="food-tags">
                   </div>
                   <div class="food-descript">
-                      This delicious dish is my grandmother's recipe. She taught me how to make it when I was a wee lad.
+                      <%=food["description"]%>
                   </div>
                   <div class="cook-info">
                       <div class="cook-pic">
                       </div>
-                      <span clas="cool-quote">
-                          "I love to cook for people!" -Lu Zhou
+                      <span clas="cook-quote">
+                          "<%=seller["quote"]%>" -<%=seller["name"]%>
                       </span>
                   </div>
               </div>
@@ -131,7 +134,7 @@
                   <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="/" data-upgraded=",MaterialButton" data-target="-1">
                    Back
                  </a>
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="addToCart" data-upgraded=",MaterialButton">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="addToCart?foodId=<%=food["id"]%>" data-upgraded=",MaterialButton">
                   Add To Cart
                 </a>
               </div>

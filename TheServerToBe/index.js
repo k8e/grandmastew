@@ -3,6 +3,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var data = require('./data/data.json');
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -27,10 +28,14 @@ app.use('/', router);
 /////////////////WebPages/////////////////////////
 app.get('/', function(req, res) {
   //res.send("Hello world");
-  res.render('index.ejs');
+  res.render('index.ejs', data);
 });
 app.get('/viewfood', function(req, res) {
-  res.render('viewfood.ejs');
+  var obj = {};
+  var food = data.food[req.query.foodId];
+  obj["food"]=food;
+  obj["seller"]=data.sellers[food.seller];
+  res.render('viewfood.ejs',obj);
 });
 app.get('/addToCart', function(req, res) {
   res.render('addToCart.ejs');
