@@ -30,8 +30,10 @@ app.get('/', function(req, res) {
   res.render('index.ejs');
 });
 app.get('/viewfood', function(req, res) {
-  //res.send("Hello world");
   res.render('viewfood.ejs');
+});
+app.get('/addToCart', function(req, res) {
+  res.render('addToCart.ejs');
 });
 
 //////////Start the server
